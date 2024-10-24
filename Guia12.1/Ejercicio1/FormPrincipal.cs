@@ -13,14 +13,24 @@ namespace Ejercicio1
 
         CentroDespachos centro = new CentroDespachos();
         Repartidor camion;
+
         public FormPrincipal()
         {
             InitializeComponent();
         }
 
-        private void btnGenerarPlan_Click(object sender, EventArgs e)
+        private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            //preinicialización
+            Paquete nuevo = null;
+            nuevo=centro.RecibirCorrespondencia(45245562, "Ana","Las lechiguanas");
+            lbxVerSectorCarga.Items.Add(nuevo);
 
+            nuevo = centro.RecibirCorrespondencia(46815545, "Gabriel", "Almafuerte 1033");
+            lbxVerSectorCarga.Items.Add(nuevo);
+
+            nuevo=centro.RecibirCorrespondencia(38454654, "Gerardo", "25 de mayo");
+            lbxVerSectorCarga.Items.Add(nuevo);
         }
 
         private void btnRecibir_Click(object sender, EventArgs e)
@@ -48,6 +58,8 @@ namespace Ejercicio1
                 int capacidad = Convert.ToInt32(fDatoCamion.nupCapacidad.Value);
 
                 camion = centro.PrepararCamion(capacidad);
+
+                lbxListadoAEntregar.Items.Clear();
 
                 Paquete paquete = null;
                 do
@@ -79,6 +91,8 @@ namespace Ejercicio1
                     lbDNI.Text = paquete.DNIRemitente.ToString();
                     lbNombre.Text = paquete.NombreRemitente;
                     lbDireccion.Text = paquete.Direccion;
+
+                    btnIniciarReparto.Enabled = false;
                 }
             }
             else
@@ -89,11 +103,28 @@ namespace Ejercicio1
 
         private void btnReparto_Click(object sender, EventArgs e)
         {
-            Paquete p = camion.Descargar();
+            Paquete paquete = camion.Descargar();
 
-            lbxListadoAEntregar.Items.Remove(p);
+            lbxListadoAEntregar.Items.Remove(paquete);
+
+            paquete = camion.Revisar();
+
+            if (paquete != null)
+            {
+                lbDNI.Text = paquete.DNIRemitente.ToString();
+                lbNombre.Text = paquete.NombreRemitente;
+                lbDireccion.Text = paquete.Direccion;
+            }
+            else
+            {
+                lbDNI.Text = "".PadRight(10,' ');
+                lbNombre.Text = "".PadRight(10, ' ');
+                lbDireccion.Text = "".PadRight(10, ' ');
+                btnReparto.Enabled = false;
+                btnIniciarReparto.Enabled = true;
+            }
         }
 
-
+       
     }
 }

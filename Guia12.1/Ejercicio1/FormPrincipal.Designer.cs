@@ -117,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 138);
+            this.label4.Location = new System.Drawing.Point(25, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 20);
             this.label4.TabIndex = 26;
@@ -125,16 +125,18 @@
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(96, 135);
+            this.tbNombre.Location = new System.Drawing.Point(96, 104);
+            this.tbNombre.Multiline = true;
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(144, 26);
+            this.tbNombre.Size = new System.Drawing.Size(144, 57);
             this.tbNombre.TabIndex = 2;
             // 
             // tbDireccion
             // 
             this.tbDireccion.Location = new System.Drawing.Point(96, 171);
+            this.tbDireccion.Multiline = true;
             this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(144, 26);
+            this.tbDireccion.Size = new System.Drawing.Size(144, 87);
             this.tbDireccion.TabIndex = 3;
             // 
             // label5
@@ -149,7 +151,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 99);
+            this.label1.Location = new System.Drawing.Point(53, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 20);
             this.label1.TabIndex = 21;
@@ -157,7 +159,7 @@
             // 
             // tbDNI
             // 
-            this.tbDNI.Location = new System.Drawing.Point(96, 96);
+            this.tbDNI.Location = new System.Drawing.Point(96, 72);
             this.tbDNI.Name = "tbDNI";
             this.tbDNI.Size = new System.Drawing.Size(144, 26);
             this.tbDNI.TabIndex = 1;
@@ -302,6 +304,7 @@
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1";
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.gbDeposito.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
