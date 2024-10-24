@@ -40,16 +40,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbDNI = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbDireccion = new System.Windows.Forms.Label();
-            this.lbxHistorialEntregas = new System.Windows.Forms.ListBox();
-            this.lbNombre = new System.Windows.Forms.Label();
-            this.lbDNI = new System.Windows.Forms.Label();
-            this.btnReparto = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnIniciarReparto = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbDireccion = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbDNI = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbNombre = new System.Windows.Forms.Label();
+            this.lbxListadoAEntregar = new System.Windows.Forms.ListBox();
+            this.btnReparto = new System.Windows.Forms.Button();
             this.gbDeposito.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,17 +81,18 @@
             // 
             this.gbDeposito.Controls.Add(this.lbxVerSectorCarga);
             this.gbDeposito.Controls.Add(this.btnPreparar);
-            this.gbDeposito.Location = new System.Drawing.Point(285, 4);
+            this.gbDeposito.Location = new System.Drawing.Point(272, 4);
             this.gbDeposito.Name = "gbDeposito";
-            this.gbDeposito.Size = new System.Drawing.Size(276, 356);
+            this.gbDeposito.Size = new System.Drawing.Size(289, 356);
             this.gbDeposito.TabIndex = 18;
             this.gbDeposito.TabStop = false;
-            this.gbDeposito.Text = "Paquetes en elSector de embarque";
+            this.gbDeposito.Text = "Paquetes en el Sector de embarque";
             // 
             // lbxVerSectorCarga
             // 
+            this.lbxVerSectorCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbxVerSectorCarga.FormattingEnabled = true;
-            this.lbxVerSectorCarga.ItemHeight = 20;
+            this.lbxVerSectorCarga.ItemHeight = 16;
             this.lbxVerSectorCarga.Location = new System.Drawing.Point(15, 35);
             this.lbxVerSectorCarga.Name = "lbxVerSectorCarga";
             this.lbxVerSectorCarga.Size = new System.Drawing.Size(255, 244);
@@ -107,7 +109,7 @@
             this.groupBox1.Controls.Add(this.btnRecibir);
             this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(267, 356);
+            this.groupBox1.Size = new System.Drawing.Size(254, 356);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sector de atención al cliente";
@@ -162,9 +164,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnIniciarReparto);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.lbxHistorialEntregas);
+            this.groupBox2.Controls.Add(this.lbxListadoAEntregar);
             this.groupBox2.Controls.Add(this.btnReparto);
             this.groupBox2.Location = new System.Drawing.Point(567, 4);
             this.groupBox2.Name = "groupBox2";
@@ -173,63 +176,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tarea de reparto";
             // 
-            // label2
+            // btnIniciarReparto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 20);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "DNI";
+            this.btnIniciarReparto.Location = new System.Drawing.Point(20, 145);
+            this.btnIniciarReparto.Name = "btnIniciarReparto";
+            this.btnIniciarReparto.Size = new System.Drawing.Size(108, 55);
+            this.btnIniciarReparto.TabIndex = 30;
+            this.btnIniciarReparto.Text = "Iniciar Reparto";
+            this.btnIniciarReparto.UseVisualStyleBackColor = true;
+            this.btnIniciarReparto.Click += new System.EventHandler(this.btnIniciarReparto_Click);
             // 
-            // lbDireccion
+            // label8
             // 
-            this.lbDireccion.AutoSize = true;
-            this.lbDireccion.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbDireccion.Location = new System.Drawing.Point(89, 77);
-            this.lbDireccion.Name = "lbDireccion";
-            this.lbDireccion.Size = new System.Drawing.Size(77, 20);
-            this.lbDireccion.TabIndex = 21;
-            this.lbDireccion.Text = "                 ";
-            // 
-            // lbxHistorialEntregas
-            // 
-            this.lbxHistorialEntregas.FormattingEnabled = true;
-            this.lbxHistorialEntregas.ItemHeight = 20;
-            this.lbxHistorialEntregas.Location = new System.Drawing.Point(6, 242);
-            this.lbxHistorialEntregas.Name = "lbxHistorialEntregas";
-            this.lbxHistorialEntregas.Size = new System.Drawing.Size(254, 104);
-            this.lbxHistorialEntregas.TabIndex = 9;
-            // 
-            // lbNombre
-            // 
-            this.lbNombre.AutoSize = true;
-            this.lbNombre.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbNombre.Location = new System.Drawing.Point(89, 47);
-            this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(77, 20);
-            this.lbNombre.TabIndex = 19;
-            this.lbNombre.Text = "                 ";
-            // 
-            // lbDNI
-            // 
-            this.lbDNI.AutoSize = true;
-            this.lbDNI.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbDNI.Location = new System.Drawing.Point(89, 22);
-            this.lbDNI.Name = "lbDNI";
-            this.lbDNI.Size = new System.Drawing.Size(77, 20);
-            this.lbDNI.TabIndex = 18;
-            this.lbDNI.Text = "                 ";
-            // 
-            // btnReparto
-            // 
-            this.btnReparto.Location = new System.Drawing.Point(74, 145);
-            this.btnReparto.Name = "btnReparto";
-            this.btnReparto.Size = new System.Drawing.Size(129, 55);
-            this.btnReparto.TabIndex = 7;
-            this.btnReparto.Text = "Entregar paquete";
-            this.btnReparto.UseVisualStyleBackColor = true;
-            this.btnReparto.Click += new System.EventHandler(this.btnReparto_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(2, 219);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(138, 20);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Listado a entregar";
             // 
             // groupBox3
             // 
@@ -246,14 +210,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Próximo a entregar";
             // 
-            // label6
+            // lbDireccion
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 47);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Nombre";
+            this.lbDireccion.AutoSize = true;
+            this.lbDireccion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbDireccion.Location = new System.Drawing.Point(89, 77);
+            this.lbDireccion.Name = "lbDireccion";
+            this.lbDireccion.Size = new System.Drawing.Size(77, 20);
+            this.lbDireccion.TabIndex = 21;
+            this.lbDireccion.Text = "                 ";
             // 
             // label3
             // 
@@ -264,14 +229,64 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Direccion";
             // 
-            // label8
+            // lbDNI
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(2, 219);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 20);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Listado a entregar";
+            this.lbDNI.AutoSize = true;
+            this.lbDNI.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbDNI.Location = new System.Drawing.Point(89, 22);
+            this.lbDNI.Name = "lbDNI";
+            this.lbDNI.Size = new System.Drawing.Size(77, 20);
+            this.lbDNI.TabIndex = 18;
+            this.lbDNI.Text = "                 ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 47);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "DNI";
+            // 
+            // lbNombre
+            // 
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbNombre.Location = new System.Drawing.Point(89, 47);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(77, 20);
+            this.lbNombre.TabIndex = 19;
+            this.lbNombre.Text = "                 ";
+            // 
+            // lbxListadoAEntregar
+            // 
+            this.lbxListadoAEntregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxListadoAEntregar.FormattingEnabled = true;
+            this.lbxListadoAEntregar.ItemHeight = 16;
+            this.lbxListadoAEntregar.Location = new System.Drawing.Point(6, 242);
+            this.lbxListadoAEntregar.Name = "lbxListadoAEntregar";
+            this.lbxListadoAEntregar.Size = new System.Drawing.Size(254, 100);
+            this.lbxListadoAEntregar.TabIndex = 9;
+            // 
+            // btnReparto
+            // 
+            this.btnReparto.Enabled = false;
+            this.btnReparto.Location = new System.Drawing.Point(144, 145);
+            this.btnReparto.Name = "btnReparto";
+            this.btnReparto.Size = new System.Drawing.Size(114, 55);
+            this.btnReparto.TabIndex = 7;
+            this.btnReparto.Text = "Entregar paquete";
+            this.btnReparto.UseVisualStyleBackColor = true;
+            this.btnReparto.Click += new System.EventHandler(this.btnReparto_Click);
             // 
             // FormPrincipal
             // 
@@ -311,7 +326,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.Label lbDNI;
-        private System.Windows.Forms.ListBox lbxHistorialEntregas;
+        private System.Windows.Forms.ListBox lbxListadoAEntregar;
         private System.Windows.Forms.ListBox lbxVerSectorCarga;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbNombre;
@@ -321,6 +336,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnIniciarReparto;
     }
 }
 

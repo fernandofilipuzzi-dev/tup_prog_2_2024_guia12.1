@@ -410,7 +410,7 @@
 <XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
 <XPD:REF name="Views[0]">MiJU+9G9v0qpCyPHjaD04wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:ATTR name="#OwnedElements" type="integer">12</XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">8</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="jhETUIrCUUCstQlQGjSQgwAA">
 <XPD:ATTR name="Name" type="string">Repartidor</XPD:ATTR>
 <XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
@@ -419,8 +419,6 @@
 <XPD:REF name="Views[1]">1N2RR1GrEUiq1bSCPE91fwAA</XPD:REF>
 <XPD:REF name="Views[2]">hZdavS6VRUaaoo4cUNAWeAAA</XPD:REF>
 <XPD:REF name="Views[3]">n0nccUTqx0eWA0d5Ip/k5gAA</XPD:REF>
-<XPD:ATTR name="#ClientDependencies" type="integer">1</XPD:ATTR>
-<XPD:REF name="ClientDependencies[0]">lRxtN4G0fE63KnF3IFVFvgAA</XPD:REF>
 <XPD:ATTR name="#Operations" type="integer">5</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="re3xc6bMt0iM3pfQdSP3BgAA">
 <XPD:ATTR name="Name" type="string">Repartidor</XPD:ATTR>
@@ -629,108 +627,7 @@
 <XPD:REF name="Participant">jhETUIrCUUCstQlQGjSQgwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedElements[5]" type="UMLClass" guid="UvOZYlbLX0uXIe1JjfnfDwAA">
-<XPD:ATTR name="Name" type="string">Feriado</XPD:ATTR>
-<XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="z9HOI7474EmoW++omn2P5QAA">
-<XPD:ATTR name="Name" type="string">Feriado</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">create</XPD:ATTR>
-<XPD:REF name="Owner">UvOZYlbLX0uXIe1JjfnfDwAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="CI5bRTU0+EO5VajLa6ALDAAA">
-<XPD:ATTR name="Name" type="string">fecha</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">z9HOI7474EmoW++omn2P5QAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="EAdHQE8iNEK7PG/hCFwNqAAA">
-<XPD:ATTR name="Name" type="string">descripcion</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">z9HOI7474EmoW++omn2P5QAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:ATTR name="#TypedParameters" type="integer">1</XPD:ATTR>
-<XPD:REF name="TypedParameters[0]">lgvPcxlR6Emkv1U3RrcCoQAA</XPD:REF>
-<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
-<XPD:REF name="Associations[0]">q0LQ19+l3Eaz3qopzwkl+gAA</XPD:REF>
-<XPD:ATTR name="#Attributes" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="v5TjRYfB8UKVzPWvfqZcugAA">
-<XPD:ATTR name="Name" type="string">Fecha</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">DateTime</XPD:ATTR>
-<XPD:REF name="Owner">UvOZYlbLX0uXIe1JjfnfDwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="cUugr8xJb0GA/4LOf/R2AAAA">
-<XPD:ATTR name="Name" type="string">Descripcion</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">string</XPD:ATTR>
-<XPD:REF name="Owner">UvOZYlbLX0uXIe1JjfnfDwAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedElements[6]" type="UMLClass" guid="CMJ6cv//nkiRvaW5UOtOaQAA">
-<XPD:ATTR name="Name" type="string">Calendario</XPD:ATTR>
-<XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
-<XPD:ATTR name="#SupplierDependencies" type="integer">1</XPD:ATTR>
-<XPD:REF name="SupplierDependencies[0]">lRxtN4G0fE63KnF3IFVFvgAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="bLBz1/KkKE6JcTsyrloQJwAA">
-<XPD:ATTR name="Name" type="string">AgregarFeriado</XPD:ATTR>
-<XPD:REF name="Owner">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="lgvPcxlR6Emkv1U3RrcCoQAA">
-<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">bLBz1/KkKE6JcTsyrloQJwAA</XPD:REF>
-<XPD:REF name="Type_">UvOZYlbLX0uXIe1JjfnfDwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="Nv707KXRp0OBOir8LGFhMQAA">
-<XPD:ATTR name="Name" type="string">dia</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">DateTime</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">bLBz1/KkKE6JcTsyrloQJwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="6IvgUF8BK0+Eb/Dq3ImxFQAA">
-<XPD:ATTR name="Name" type="string">descripcion</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">string</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">bLBz1/KkKE6JcTsyrloQJwAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
-<XPD:REF name="Associations[0]">Ov2l7wHGUkS3MgkyHLzMTAAA</XPD:REF>
-<XPD:ATTR name="#Attributes" type="integer">3</XPD:ATTR>
-<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="jyYMYbkQIkGMtmIEIkTGmgAA">
-<XPD:ATTR name="Name" type="string">CantidadFeriados</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">readonly</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="Owner">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="Ghttt384U0+DI6OnCl87WQAA">
-<XPD:ATTR name="Name" type="string">this(dia</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">indexer</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">DateTime):Feriado</XPD:ATTR>
-<XPD:REF name="Owner">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Attributes[2]" type="UMLAttribute" guid="RW6Kh2tpQUWKKnoT4tFK3gAA">
-<XPD:ATTR name="Name" type="string">this(idx</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">indexer</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int):Feriado</XPD:ATTR>
-<XPD:REF name="Owner">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedElements[7]" type="UMLAssociation" guid="tz6WdZQmqUGl4/TVA+lW8AAA">
-<XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
-<XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="q0LQ19+l3Eaz3qopzwkl+gAA">
-<XPD:ATTR name="Multiplicity" type="string">*</XPD:ATTR>
-<XPD:REF name="Association">tz6WdZQmqUGl4/TVA+lW8AAA</XPD:REF>
-<XPD:REF name="Participant">UvOZYlbLX0uXIe1JjfnfDwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="Ov2l7wHGUkS3MgkyHLzMTAAA">
-<XPD:ATTR name="Aggregation" type="UMLAggregationKind">akComposite</XPD:ATTR>
-<XPD:REF name="Association">tz6WdZQmqUGl4/TVA+lW8AAA</XPD:REF>
-<XPD:REF name="Participant">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedElements[8]" type="UMLDependency" guid="lRxtN4G0fE63KnF3IFVFvgAA">
-<XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
-<XPD:REF name="Client">jhETUIrCUUCstQlQGjSQgwAA</XPD:REF>
-<XPD:REF name="Supplier">CMJ6cv//nkiRvaW5UOtOaQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedElements[9]" type="UMLAssociation" guid="KyBhdsq6yk2dhMcMDQKoogAA">
+<XPD:OBJ name="OwnedElements[5]" type="UMLAssociation" guid="KyBhdsq6yk2dhMcMDQKoogAA">
 <XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">IvNkpaJ32kiY9REF/S4BPAAA</XPD:REF>
@@ -761,7 +658,7 @@
 <XPD:REF name="Views[3]">gsh8cHFLQEio/vgCV7gvogAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedElements[10]" type="UMLAssociation" guid="NAchqoboVUSJK9/AbXNnrQAA">
+<XPD:OBJ name="OwnedElements[6]" type="UMLAssociation" guid="NAchqoboVUSJK9/AbXNnrQAA">
 <XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">4Vpcbk5QZ0OSwJLV5azxpQAA</XPD:REF>
@@ -791,7 +688,7 @@
 <XPD:REF name="Views[3]">ZU44UuNHjkugqoIQYtRXZAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedElements[11]" type="UMLAssociation" guid="Dfc1kWMzlkWaXgcN2N5BpwAA">
+<XPD:OBJ name="OwnedElements[7]" type="UMLAssociation" guid="Dfc1kWMzlkWaXgcN2N5BpwAA">
 <XPD:ATTR name="Name" type="string">entregas:Stack&lt;Entega&gt;</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Namespace">N7oI3wmNzEuDjROI1MQw3wAA</XPD:REF>

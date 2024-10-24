@@ -19,14 +19,20 @@ namespace Ejercicio1.Models
             return nuevo;
         }
 
-        public Repartidor PrepararCamion()
+        public Repartidor PrepararCamion(int capacidad)
         {
-            while (camion.TieneCapacidadDisponible()==true && depositos.Count > 0)
-            { 
-                camion.Cargar( depositos.Dequeue() );
-            }
+            camion = new Repartidor(capacidad);
             return camion;
         }
-
+        public Paquete CargarPaqueteAlCamion()
+        {
+            Paquete paquete = null;
+           if (camion.TieneCapacidadDisponible()==true && depositos.Count > 0)
+            {
+                paquete = depositos.Dequeue();//saco el paquete
+                camion.Cargar( paquete );//lo cargo
+            }
+            return paquete;//de esta forma si devuelvo null es porque terminé
+        }
     }
 }
