@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Ejercicio3.Models
 {
     public class CentralTaxis
     {
         Queue<Movil> movilesDisponibles=new Queue<Movil>();
-        List<Movil> movilesOcupados = new List<Movil>();
+        LinkedList<Movil> movilesOcupados = new LinkedList<Movil>();
 
         Queue<Pedido> pedidos = new Queue<Pedido>();
         
@@ -29,7 +30,7 @@ namespace Ejercicio3.Models
 
                 disponible.Pasajero = pedido;
 
-                movilesOcupados.Add(disponible);
+                movilesOcupados.AddLast(disponible);
                 return disponible;
             }
             return disponible;
@@ -39,17 +40,20 @@ namespace Ejercicio3.Models
         {
             Movil libre = null;//me va a indicar si fue exitosa la asignación
 
-            int idx = movilesOcupados.BinarySearch(new Movil(numero));
-
-            if (idx >= 0)
+            LinkedListNode<Movil> nodo = movilesOcupados.First;
+            while (nodo!=null && libre==null)
             {
-                libre = movilesOcupados[idx];
+                libre = nodo.Value;
+                nodo=nodo.Next;
+            }
+
+            if (libre != null)
+            {
                 libre.Pasajero = null;//desvinculo con el pedido/cliente/pedido
                 movilesDisponibles.Enqueue(libre);
             }
                        
             return libre;
         }
-
     }
 }

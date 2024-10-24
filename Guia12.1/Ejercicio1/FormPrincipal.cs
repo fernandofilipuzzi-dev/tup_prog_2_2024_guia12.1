@@ -91,7 +91,7 @@ namespace Ejercicio1
         {
             Paquete p = camion.Descargar();
 
-            lbxListadoAEntregar.Items.Add(p);
+            lbxListadoAEntregar.Items.Remove(p);
         }
 
 
