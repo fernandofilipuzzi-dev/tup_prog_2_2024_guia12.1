@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Policy;
 
 namespace libEstructuras
 {
@@ -63,6 +65,41 @@ namespace libEstructuras
             }
 
             return lista;
+        }
+
+        public List<T> ListarNodosRama(T desde, T hasta)
+        {
+            var nA=BuscarNodo(desde);
+            List<T> rama = new List<T>();
+
+            ListarNodosRama(nA, hasta, rama);
+
+            return rama;
+        }
+
+        public void ListarNodosRama(NodoNArio<T> nodo, T hasta, List<T> lista)
+        {
+            if (nodo == null) return;
+
+            lista.Add(nodo.Valor);
+
+            if (nodo.Valor.Equals(hasta)|| nodo.Hijos.Count == 0)
+            {    
+                return;
+            }
+
+            foreach (var hijo in nodo.Hijos)
+            {
+                List<T> rama = new List<T>();
+                ListarNodosRama(hijo, hasta, rama);
+
+                int idx = rama.BinarySearch(hasta);
+                if (idx >= 0) 
+                { 
+                    lista.AddRange(rama.ToArray());
+                    return;
+                };
+            }
         }
     }
 }

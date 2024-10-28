@@ -29,21 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbxPedidosEntrantes = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAtender = new System.Windows.Forms.Button();
             this.tbDireccion = new System.Windows.Forms.TextBox();
             this.tbTelefono = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnAsignar = new System.Windows.Forms.Button();
-            this.lbDisponibles = new System.Windows.Forms.ListBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbOcupados = new System.Windows.Forms.ListBox();
-            this.btnLiberar = new System.Windows.Forms.Button();
-            this.nupNumeroMovil = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbxOcupados = new System.Windows.Forms.ListBox();
+            this.lbxDisponibles = new System.Windows.Forms.ListBox();
+            this.btnAsignar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nupNumeroMovil = new System.Windows.Forms.NumericUpDown();
+            this.btnLiberar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.lbxPedidosEntrantes);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnAtender);
@@ -66,6 +70,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recibir Pedido Taxi";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 153);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Pedidos Entrantes";
+            // 
+            // lbxPedidosEntrantes
+            // 
+            this.lbxPedidosEntrantes.FormattingEnabled = true;
+            this.lbxPedidosEntrantes.ItemHeight = 20;
+            this.lbxPedidosEntrantes.Location = new System.Drawing.Point(85, 176);
+            this.lbxPedidosEntrantes.Name = "lbxPedidosEntrantes";
+            this.lbxPedidosEntrantes.Size = new System.Drawing.Size(202, 84);
+            this.lbxPedidosEntrantes.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Direccion";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Telefono";
+            // 
             // btnAtender
             // 
             this.btnAtender.Location = new System.Drawing.Point(85, 266);
@@ -78,7 +118,7 @@
             // 
             // tbDireccion
             // 
-            this.tbDireccion.Location = new System.Drawing.Point(88, 150);
+            this.tbDireccion.Location = new System.Drawing.Point(85, 65);
             this.tbDireccion.Multiline = true;
             this.tbDireccion.Name = "tbDireccion";
             this.tbDireccion.Size = new System.Drawing.Size(205, 83);
@@ -86,35 +126,17 @@
             // 
             // tbTelefono
             // 
-            this.tbTelefono.Location = new System.Drawing.Point(88, 101);
+            this.tbTelefono.Location = new System.Drawing.Point(85, 33);
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(205, 26);
             this.tbTelefono.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Telefono";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Direccion";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.lbOcupados);
-            this.groupBox2.Controls.Add(this.lbDisponibles);
+            this.groupBox2.Controls.Add(this.lbxOcupados);
+            this.groupBox2.Controls.Add(this.lbxDisponibles);
             this.groupBox2.Controls.Add(this.btnAsignar);
             this.groupBox2.Location = new System.Drawing.Point(320, 14);
             this.groupBox2.Name = "groupBox2";
@@ -122,6 +144,42 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Central de taxis";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(164, 20);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Vehículos Disponibles";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Vehículos Ocupados";
+            // 
+            // lbxOcupados
+            // 
+            this.lbxOcupados.FormattingEnabled = true;
+            this.lbxOcupados.ItemHeight = 20;
+            this.lbxOcupados.Location = new System.Drawing.Point(10, 176);
+            this.lbxOcupados.Name = "lbxOcupados";
+            this.lbxOcupados.Size = new System.Drawing.Size(283, 84);
+            this.lbxOcupados.TabIndex = 4;
+            // 
+            // lbxDisponibles
+            // 
+            this.lbxDisponibles.FormattingEnabled = true;
+            this.lbxDisponibles.ItemHeight = 20;
+            this.lbxDisponibles.Location = new System.Drawing.Point(6, 56);
+            this.lbxDisponibles.Name = "lbxDisponibles";
+            this.lbxDisponibles.Size = new System.Drawing.Size(287, 84);
+            this.lbxDisponibles.TabIndex = 4;
             // 
             // btnAsignar
             // 
@@ -132,15 +190,6 @@
             this.btnAsignar.Text = "Asignar Coche a Cliente";
             this.btnAsignar.UseVisualStyleBackColor = true;
             this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
-            // 
-            // lbDisponibles
-            // 
-            this.lbDisponibles.FormattingEnabled = true;
-            this.lbDisponibles.ItemHeight = 20;
-            this.lbDisponibles.Location = new System.Drawing.Point(6, 56);
-            this.lbDisponibles.Name = "lbDisponibles";
-            this.lbDisponibles.Size = new System.Drawing.Size(287, 84);
-            this.lbDisponibles.TabIndex = 4;
             // 
             // groupBox3
             // 
@@ -154,14 +203,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acciones del chofer";
             // 
-            // lbOcupados
+            // label3
             // 
-            this.lbOcupados.FormattingEnabled = true;
-            this.lbOcupados.ItemHeight = 20;
-            this.lbOcupados.Location = new System.Drawing.Point(10, 176);
-            this.lbOcupados.Name = "lbOcupados";
-            this.lbOcupados.Size = new System.Drawing.Size(283, 84);
-            this.lbOcupados.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Número Vehículo";
+            // 
+            // nupNumeroMovil
+            // 
+            this.nupNumeroMovil.Location = new System.Drawing.Point(168, 46);
+            this.nupNumeroMovil.Name = "nupNumeroMovil";
+            this.nupNumeroMovil.Size = new System.Drawing.Size(78, 26);
+            this.nupNumeroMovil.TabIndex = 4;
             // 
             // btnLiberar
             // 
@@ -173,45 +229,11 @@
             this.btnLiberar.UseVisualStyleBackColor = true;
             this.btnLiberar.Click += new System.EventHandler(this.btnLiberar_Click);
             // 
-            // nupNumeroMovil
-            // 
-            this.nupNumeroMovil.Location = new System.Drawing.Point(126, 46);
-            this.nupNumeroMovil.Name = "nupNumeroMovil";
-            this.nupNumeroMovil.Size = new System.Drawing.Size(120, 26);
-            this.nupNumeroMovil.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Número";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Vehículos Ocupados";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Vehículos Disponibles";
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 374);
+            this.ClientSize = new System.Drawing.Size(933, 367);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -221,6 +243,7 @@
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -241,8 +264,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox lbOcupados;
-        private System.Windows.Forms.ListBox lbDisponibles;
+        private System.Windows.Forms.ListBox lbxOcupados;
+        private System.Windows.Forms.ListBox lbxDisponibles;
         private System.Windows.Forms.Button btnAsignar;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label3;
@@ -250,6 +273,8 @@
         private System.Windows.Forms.Button btnLiberar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox lbxPedidosEntrantes;
     }
 }
 

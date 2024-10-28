@@ -13,12 +13,22 @@ namespace Ejercicio3_CentroTaxis
             InitializeComponent();
         }
 
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            for (int idx = 0; idx < central.CantidadDisponibles; idx++)
+            {
+               lbxDisponibles.Items.Add( central.VerDisponible(idx));
+            }
+        }
+
         private void btnAtender_Click(object sender, EventArgs e)
         {
             string tel = tbTelefono.Text;
             string direccion = tbDireccion.Text;
 
-            central.RecibirSolicitud(tel, direccion);
+            Pedido nuevo=central.RecibirSolicitud(tel, direccion);
+
+            lbxPedidosEntrantes.Items.Add(nuevo);
 
             tbTelefono.Clear();
             tbDireccion.Clear();
@@ -33,9 +43,11 @@ namespace Ejercicio3_CentroTaxis
             }
             else
             {
-                lbDisponibles.Items.Remove(movil);
-                lbOcupados.Items.Add(movil);
+                lbxDisponibles.Items.Remove(movil);
+                lbxPedidosEntrantes.Items.Remove(movil.Pasajero);//remueve el pedido de pedidos entrantes
 
+                lbxOcupados.Items.Add(movil);
+                
                 MessageBox.Show($"Móvil Número: {movil.Numero} asignado al cliente: {movil.Pasajero.Telefono}");
             }
         }
@@ -51,9 +63,11 @@ namespace Ejercicio3_CentroTaxis
             }
             else
             {
-                lbOcupados.Items.Remove(movil);
-                lbDisponibles.Items.Add(movil);
+                lbxOcupados.Items.Remove(movil);
+                lbxDisponibles.Items.Add(movil);
             }
         }
+
+       
     }
 }

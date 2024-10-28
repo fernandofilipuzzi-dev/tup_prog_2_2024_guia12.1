@@ -187,11 +187,10 @@
 <XPD:REF name="Model">gMsOZLG+7kKS6wFr9eVBEgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="PMip1ukC3kKxFuzzNCoSYgAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">4,61897910734192</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">36,4005494464026</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">4,55793974669742</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">44,3846820423443</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">-Disponibles</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">-LinkedList&lt;Movil&gt;</XPD:ATTR>
 <XPD:REF name="Model">Fws0jd4EsU60vuzxVAlSxgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="H/atM/DLGEmqq/WaXXuCwQAA">
@@ -601,6 +600,7 @@
 <XPD:REF name="Views[3]">W2ZBEWmcLk2N3S/XHVt99AAA</XPD:REF>
 <XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="Fws0jd4EsU60vuzxVAlSxgAA">
+<XPD:ATTR name="Name" type="string">LinkedList&lt;Movil&gt;</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="Multiplicity" type="string">*</XPD:ATTR>
 <XPD:REF name="Association">KyBhdsq6yk2dhMcMDQKoogAA</XPD:REF>
