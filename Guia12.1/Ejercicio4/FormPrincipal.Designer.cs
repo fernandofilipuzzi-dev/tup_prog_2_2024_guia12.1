@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMostrarNodos = new System.Windows.Forms.Button();
+            this.btnVerTodosNodos = new System.Windows.Forms.Button();
             this.tbVer = new System.Windows.Forms.TextBox();
             this.cbxDesde = new System.Windows.Forms.ComboBox();
             this.cbxHasta = new System.Windows.Forms.ComboBox();
@@ -41,16 +41,16 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnMostrarNodos
+            // btnVerTodosNodos
             // 
-            this.btnMostrarNodos.Location = new System.Drawing.Point(297, 12);
-            this.btnMostrarNodos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnMostrarNodos.Name = "btnMostrarNodos";
-            this.btnMostrarNodos.Size = new System.Drawing.Size(316, 45);
-            this.btnMostrarNodos.TabIndex = 0;
-            this.btnMostrarNodos.Text = "Mostrar Todos los Nodos";
-            this.btnMostrarNodos.UseVisualStyleBackColor = true;
-            this.btnMostrarNodos.Click += new System.EventHandler(this.button1_Click);
+            this.btnVerTodosNodos.Location = new System.Drawing.Point(297, 12);
+            this.btnVerTodosNodos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerTodosNodos.Name = "btnVerTodosNodos";
+            this.btnVerTodosNodos.Size = new System.Drawing.Size(316, 45);
+            this.btnVerTodosNodos.TabIndex = 0;
+            this.btnVerTodosNodos.Text = "Mostrar Todos los Nodos";
+            this.btnVerTodosNodos.UseVisualStyleBackColor = true;
+            this.btnVerTodosNodos.Click += new System.EventHandler(this.btnVerTodosNodos_Click);
             // 
             // tbVer
             // 
@@ -148,7 +148,7 @@
             this.ClientSize = new System.Drawing.Size(628, 291);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tbVer);
-            this.Controls.Add(this.btnMostrarNodos);
+            this.Controls.Add(this.btnVerTodosNodos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -165,7 +165,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnMostrarNodos;
+        private System.Windows.Forms.Button btnVerTodosNodos;
         private System.Windows.Forms.TextBox tbVer;
         private System.Windows.Forms.ComboBox cbxDesde;
         private System.Windows.Forms.ComboBox cbxHasta;

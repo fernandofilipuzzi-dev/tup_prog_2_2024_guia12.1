@@ -36,16 +36,16 @@ namespace Ejercicio4.Models
         
         public double ProbabilidadEvento2DadoEvento1(Evento evento1, Evento evento2)
         {
-            double prob = 1 / probabilidades.BuscarNodo(evento1).Valor.Probabilidad;
-
+            
             List<Evento> eventos = ListaEventos(evento1, evento2);
-
-            if (eventos.Count == 1) prob = 0;
-
-            foreach (Evento eve in eventos)
-            { 
-                prob *= eve.Probabilidad;
+            double prob = 1;
+            for (int idx=1;idx<eventos.Count;idx++)
+            {
+                prob *= eventos[idx].Probabilidad;
             }
+
+            if (eventos.BinarySearch(evento2) < 0) prob = 0;
+
             return prob;
         }
     }
